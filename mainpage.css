@@ -1,0 +1,885 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+@font-face {
+  font-family: Myheart;
+  src: url(fonts/myheart.otf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Myheart2;
+  src: url(fonts/myheart.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Myheart3;
+  src: url(fonts/myheart.woff2);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Valentine;
+  src: url(fonts/Valentine.otf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Valentine2;
+  src: url(fonts/Valentine\ Wildflower\ Sans\ Demo.otf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Valentine3;
+  src: url(fonts/Valentine.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: wildlove;
+  src: url(fonts/Wild\ Love.otf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: bemyvalentine;
+  src: url(fonts/Be\ My\ Valentine.otf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: bemyvalentine;
+  src: url(fonts/Be\ My\ Valentine.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: adelia;
+  src: url(fonts/adelia.otf);
+}
+@font-face {
+  font-family: adelia2;
+  src: url(fonts/adelia.ttf);
+}
+@font-face {
+  font-family: calinastiya;
+  src: url(fonts/Calinastiya\ demo.ttf);
+}
+@font-face {
+  font-family: lovematch;
+  src: url(fonts/LoveMatch.otf);
+}
+@font-face {
+  font-family: lovematch2;
+  src: url(fonts/LoveMatch.ttf);
+}
+
+@font-face {
+  font-family: muthiara;
+  src: url(fonts/Muthiara\ demo\ version.otf);
+}
+
+@font-face {
+  font-family: coolvetica;
+  src: url(fonts/Coolvetica\ Rg.otf);
+}
+
+/* --------------------------------------------- */
+::-webkit-scrollbar {
+  width: 10px;
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #880044;
+  border-radius: 5px;
+  background-image: url(pics/_red\ heart\ sticker_\ Sticker\ for\ Sale\ by\ Toni\ C-Photoroom.png);
+  background-size: contain;
+}
+
+body {
+  background-color: #e5d1d0;
+  /* height: 1000vh;
+  width: 100vw;
+  display: flex;
+    flex-direction: column;
+    justify-content: flex-start; */
+}
+
+audio {
+  display: none;
+}
+
+.intro {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+    url(pics/download.jpg);
+  background-size: contain;
+  overflow: hidden;
+}
+
+.intro h2 {
+  font-family: adelia;
+  font-size: 1.5rem;
+  color: #880044;
+}
+
+.intro h1 {
+  font-family: adelia;
+  font-size: 3rem;
+  color: #880044;
+  margin-top: 20px;
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid currentColor;
+  animation:
+    typing 5s steps(23) 3s forwards infinite,
+    blink 0.7s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 20ch;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.intro img {
+  width: 150px;
+  height: 150px;
+  margin-top: 30px;
+  position: absolute;
+}
+
+.intro .stickerone {
+  bottom: 20px;
+  left: 20px;
+  width: 15rem;
+  height: 15rem;
+}
+
+.intro .stickertwo {
+  top: 10px;
+  right: -20px;
+  width: 20rem;
+  height: 20rem;
+  transform: rotateZ(-15deg);
+}
+
+.intro .stickerthree {
+  top: 20px;
+  left: 120px;
+  width: 20rem;
+  height: 20rem;
+  animation: rotate 1s linear infinite alternate;
+}
+
+.intro .stickerfour {
+  bottom: 100px;
+  right: 150px;
+  width: 10rem;
+  animation: imgblink 0.2s infinite;
+}
+
+.intro .stickerfive {
+  position: absolute;
+  height: 100px;
+  width: 80px;
+  right: 380px;
+  top: 150px;
+  transform: rotateZ(-15deg);
+  z-index: 1;
+}
+
+@keyframes imgblink {
+  50% {
+    opacity: 0.4;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateZ(15deg);
+    scale: 1.1;
+  }
+  to {
+    transform: rotateZ(-15deg);
+    scale: 1;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.stickerone,
+.stickertwo {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* ---------------------page1--------------------- */
+
+.section1 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: red; */
+  position: relative;
+  border-top: 10px solid #880044;
+  overflow: hidden;
+}
+
+.section1 h1 {
+  font-family: muthiara;
+  font-weight: 400;
+  font-size: 4rem;
+  color: #880044;
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid currentColor;
+  animation:
+    typing 5s steps(19, end) 3s infinite,
+    blink 0.7s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 17ch;
+  } /* adjust to your text length */
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.section1 .her1 {
+  width: 350px;
+  height: 200px;
+  position: absolute;
+  background-position: center;
+  background-image: url(her/page1.jpg);
+  background-size: cover;
+  top: 80px;
+  left: -20px;
+  transform: rotateZ(-20deg);
+  border: 2px dashed #880044;
+  border-radius: 2rem;
+  animation: keeprotate 1s steps(2) infinite alternate;
+}
+.section1 .her2 {
+  width: 350px;
+  height: 200px;
+  position: absolute;
+  background-position: center;
+  background-image: url(her/page2.jpg);
+  background-size: cover;
+  top: 20px;
+  left: 300px;
+  border: 2px dashed #880044;
+  border-radius: 2rem;
+  transform: rotateZ(10deg);
+  animation: keeprotate 1s steps(2) infinite alternate;
+}
+.section1 .her3 {
+  width: 350px;
+  height: 200px;
+  position: absolute;
+  background-position: center;
+  background-image: url(her/page3.jpg);
+  background-size: cover;
+  top: 20px;
+  left: 600px;
+  border: 2px dashed #880044;
+  border-radius: 2rem;
+  transform: rotateZ(-5deg);
+  animation: keeprotate 1s steps(2) infinite alternate;
+}
+.section1 .her4 {
+  width: 350px;
+  height: 200px;
+  position: absolute;
+  background-position: center;
+  background-image: url(her/page4.jpg);
+  background-size: cover;
+  top: 80px;
+  right: -20px;
+  transform: rotateZ(20deg);
+  border: 2px dashed #880044;
+  border-radius: 2rem;
+  animation: keeprotate 1s steps(2) infinite alternate;
+}
+.section1 .her5 {
+  width: 350px;
+  height: 200px;
+  position: absolute;
+  background-position: center;
+  background-image: url(her/page5.jpg);
+  background-size: cover;
+  bottom: 20px;
+  right: -10px;
+  transform: rotateZ(-15deg);
+  border: 2px dashed #880044;
+  border-radius: 2rem;
+  animation: keeprotate 1s steps(2) infinite alternate;
+}
+.section1 .her6 {
+  width: 350px;
+  height: 200px;
+  position: absolute;
+  background-position: center;
+  background-image: url(her/page6.jpg);
+  /* background-position: 20px -20px; */
+  background-size: cover;
+  bottom: 20px;
+  right: 300px;
+  border: 2px dashed #880044;
+  border-radius: 2rem;
+  transform: rotateZ(10deg);
+  animation: keeprotate 1s steps(2) infinite alternate;
+}
+.section1 .her7 {
+  width: 350px;
+  height: 200px;
+  position: absolute;
+  background-position: center;
+  background-image: url(her/page7.jpg);
+  background-size: cover;
+  bottom: 20px;
+  right: 650px;
+  transform: rotateZ(-15deg);
+  border: 2px dashed #880044;
+  border-radius: 2rem;
+  animation: keeprotate 1s steps(2) infinite alternate;
+}
+.section1 .her8 {
+  width: 350px;
+  height: 200px;
+  position: absolute;
+  background-position: 20px -40px;
+  background-image: url(her/page8.jpg);
+  background-size: cover;
+  bottom: 20px;
+  left: -20px;
+  transform: rotateZ(20deg);
+  border: 2px dashed #880044;
+  border-radius: 2rem;
+  animation: keeprotate 1s steps(2) infinite alternate;
+}
+
+@keyframes keeprotate {
+  50% {
+    transform: rotateZ(0deg);
+  }
+}
+
+/* ---------------------------section2--------------------------- */
+
+.section2 {
+  width: 100%;
+  /* height: 110vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: red; */
+  position: relative;
+  /* overflow-x: hidden; */
+  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(pics/ilybackground.jpg);
+  background-size: cover;
+  background-position: center;
+  border-bottom: 10px solid #880044;
+}
+
+.section2 .part1 {
+  height: 110vh;
+  position: relative;
+  
+}
+
+.section2 .fstimg {
+  width: 500px;
+  height: 300px;
+  position: absolute;
+  top: 100px;
+  background-image: url(her/firstRLSHPpic.png);
+  background-position: center;
+  background-size: cover;
+  border: 2px dashed #880044;
+  border-radius: 2rem;
+  /* left: 40px; */
+  animation: moveright linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 10% exit 100%;
+}
+
+@keyframes moveright {
+  from {
+    transform: translateX(-500px);
+    opacity: 0.8;
+    scale: 0.8;
+  }
+  to {
+    transform: translateX(500px);
+        opacity: 1;
+    scale: 1;
+  }
+}
+
+.section2 .fsttxt {
+  position: absolute;
+  top : 170px;
+  left: -360px;
+  animation: moveleft linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 10% exit 100%;
+  height: 100px;
+  width: 500px;
+  /* background-color: red; */
+}
+
+.section2 .fsttxt h1 {
+  font-family: adelia;
+  font-size: 3rem;
+  color: #880044;
+}
+
+@keyframes moveleft {
+  from {
+    transform: translateX(500px);
+    opacity: 0.8;
+    scale: 0.8;
+  }
+  to {
+    transform: translateX(-500px);
+        opacity: 1; 
+    scale: 1;
+  }
+}
+
+.section2 .part2 {
+  height: 110vh;
+  position: relative;
+}
+
+.section2 .part2 .scdimg {
+  width: 500px;
+  height: 300px;
+  position: absolute;
+  background-image: url(her/secondpic.jpg);
+  background-position: center;
+  background-size: cover;
+  border: 2px dashed #880044;
+  border-radius: 2rem;
+  /* left: 40px; */
+  /* top: 100px;
+  animation: moveright linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 10% exit 100%; */
+
+  top : 170px;
+  left: -500px;
+  animation: moveleft linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 10% exit 100%;
+}
+
+.section2 .part2 .scdtxt {
+  position: absolute;
+  font-family: adelia;
+  height: 100px;
+  width: 500px;
+
+  top: 200px;
+  right: -450px;
+  animation: moveright linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 10% exit 100%;
+  color: #880044;
+
+  /* top : 170px;
+  left: -360px;
+  animation: moveleft linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 10% exit 100%; */
+}
+
+.section2 .part3 {
+  height: 110vh;
+  position: relative;
+}
+
+.section2 .part3 .thrdimg {
+    width: 500px;
+  height: 300px;
+  position: absolute;
+  top: 100px;
+  background-image: url(her/thirdpic.jpg);
+  background-position: center;
+  background-size: cover;
+  border: 2px dashed #880044;
+  border-radius: 2rem;
+  /* left: 40px; */
+  animation: moveright linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 10% exit 100%;
+}
+
+.section2 .part3 .thrdtxt {
+  position: absolute;
+  top : 170px;
+  left: -360px;
+  animation: moveleft linear;
+  font-family: adelia;
+  color: #880044;
+  animation-timeline: view();
+  animation-range: entry 0% cover 10% exit 100%;
+  height: 100px;
+  width: 500px;
+}
+
+.section2 .part4 {
+  height: 110vh;
+  position: relative;
+}
+
+.section2 .part4 .frthimg {
+   width: 500px;
+  height: 300px;
+  position: absolute;
+  background-image: url(her/smiling.jpg);
+  background-position: center;
+  background-size: cover;
+  border: 2px dashed #880044;
+  border-radius: 2rem;
+  top : 170px;
+  left: -500px;
+  animation: moveleft linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 10% exit 100%;
+}
+
+.section2 .part4 .frthtxt {
+  position: absolute;
+  font-family: adelia;
+  height: 100px;
+  width: 500px;
+  top: 200px;
+  right: -450px;
+  animation: moveright linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 10% exit 100%;
+  color: #880044;
+}
+
+.section2 .part5 {
+  height: 110vh;
+  position: relative;
+}
+
+.section2 .part5 .fifthimg {
+   width: 500px;
+  height: 300px;
+  position: absolute;
+  top: 100px;
+  background-image: url(her/fifthsec.jpg);
+  background-position: center;
+  background-size: cover;
+  border: 2px dashed #880044;
+  border-radius: 2rem;
+  /* left: 40px; */
+  animation: moveright linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 10% exit 100%;
+}
+
+.section2 .part5 .fifthtxt {
+  position: absolute;
+  top : 170px;
+  left: -360px;
+  animation: moveleft linear;
+  font-family: adelia;
+  color: #880044;
+  animation-timeline: view();
+  animation-range: entry 0% cover 10% exit 100%;
+  height: 100px;
+  width: 500px;
+}
+
+/* .section2 .fsttxt, .section2 .scdtxt, .section2 .thrdtxt, .section2 .frthtxt, .section2 .fifthtxt {
+  
+} */
+
+.section2 .part6 {
+  height: 110vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section2 .part6 .sixthimg {
+   width: 500px;
+  height: 300px;
+  position: absolute;
+  top: 300px;
+  background-image: url(her/us.jpg);
+  background-position: 0px -10px;
+  background-size: cover;
+  border: 2px dashed #880044;
+  border-radius: 2rem;
+  animation: riseupimg linear;
+    animation-timeline: view() cover 80% exit 100%;
+}
+
+.section2 .part6 .sixthtxt {
+  position: absolute;
+  font-family: adelia;
+  color: #880044;
+  height: 100px;
+  width: 50vw;
+  text-align: center;
+  animation: riseup linear;
+  animation-timeline: view();
+}
+
+@keyframes riseup {
+    from {
+        transform: translateY(500px);
+        opacity: 0.8;
+        scale: 0.8;
+    }
+    to {
+        transform: translateY(100px);
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+@keyframes riseupimg {
+    from {
+        transform: translateY(100px);
+        opacity: 0.8;
+        scale: 0.8;
+    }
+    to {
+        transform: translateY(-100px);
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+/* =======================================section3--------------------------- */
+
+.section3 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.section3 .letter {
+    height: 500px;
+    width: 300px;
+    position: absolute;
+    left: 100px;
+}
+
+.section3 .letter .clickmetxt {
+    font-family: muthiara;
+    font-size: 2rem;
+    color: #880044;
+    position: absolute;
+    top: 60px;
+    right: -850px;
+    height: 400px;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+    text-align: center;
+}
+
+/* ======================================section4--------------------------- */
+
+.section4 {
+    width: 100%;
+    height: 130vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(pics/heartgrid.jpg);
+    background-size: contain;
+    background-position: center;
+    position: relative;
+}
+
+.section4 h1 {
+    font-family: muthiara;
+    font-size: 6rem;
+    color: #8e0d25;
+    position: absolute;
+    top: -10px;
+    z-index: 2;
+}
+
+.section4 .moment1 {
+    height: 500px;
+    width: 300px;
+    background-color: red;
+    position: absolute;
+    right: 100px;
+    top: 100px;
+}
+
+.section4 .moment1 video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section4 .moment2 {
+    height: 200px;
+    width: 400px;
+    background-color: rgb(255, 225, 0);
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}
+
+.section4 .moment2 video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section4 .moment3 {
+    height: 300px;
+    width: 500px;
+    background-color: rgb(0, 255, 255);
+    position: absolute;
+    top: 150px;
+    z-index: 1;
+}
+
+.section4 .moment3 video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.section4 .moment4 {
+    height: 400px;
+    width: 600px;
+    background-color: rgb(255, 0, 255);
+    position: absolute;
+    left: 140px;
+    top: 270px;
+}
+
+.section4 .moment4 video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section4 .moment5 {
+    height: 200px;
+    width: 400px;
+    background-color: rgb(0, 255, 0);
+    position: absolute;
+    right: 270px;
+    top: 440px;
+}
+
+.section4 .moment5 video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ======================================section5--------------------------- */
+
+.section5 {
+    width: 100%;
+    height: 100vh;
+    background-color: #880044;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.section5 h2 {
+    font-family: muthiara;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    font-weight: 300;
+    transition: color 0.35s ease, letter-spacing 0.35s ease;
+  cursor: pointer;
+}
+
+.section5 h2:hover {
+    color: #e5d1d0;
+    letter-spacing: 1px;
+}
+
+/* ================================footer--------------------------- */
+
+.footer {
+    width: 100%;
+    height: 50vh;
+    background-color: #010400;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+.footer h3 {
+    font-family: coolvetica;
+    font-size: 4rem;
+    color: #880044;
+    opacity: 0.4;
+}

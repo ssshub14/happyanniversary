@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: Myheart;
+    src: url(fonts/myheart.otf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Myheart2;
+    src: url(fonts/myheart.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Myheart3;
+    src: url(fonts/myheart.woff2);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Valentine;
+    src: url(fonts/Valentine.otf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Valentine2;
+    src: url(fonts/Valentine\ Wildflower\ Sans\ Demo.otf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Valentine3;
+    src: url(fonts/Valentine.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: wildlove;
+    src: url(fonts/Wild\ Love.otf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: bemyvalentine;
+    src: url(fonts/Be\ My\ Valentine.otf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: bemyvalentine;
+    src: url(fonts/Be\ My\ Valentine.ttf);
+    font-weight: normal;
+}
+
+body {
+    /* background-color: #EFAAB0; */
+    /* background-color: #E86975; */
+    /* background-color: #FD9898; */
+    background-color: #fff9f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     background-image: url(pics/indexbg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.yesorno {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 70%;
+    /* border: 2px solid black; */
+}
+
+.yesorno h1 {
+    font-family: Myheart, Myheart2, Myheart3;
+    font-size: 9rem;
+    color: #BE0822;
+    /* margin-bottom: 20px; */
+}
+
+.yesorno h3 {
+    font-family: wildlove;
+    font-size: 3rem;
+    color: #BE0822;
+    margin-bottom: 20px;
+    font-weight: 100;
+}   
+
+.yesorno img {
+    width: 10rem;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+    /* border: 2px solid black; */
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    border: 5px solid #BE0822;
+    background: transparent;
+    /* font-family:valentine, Valentine2, Valentine3; */
+    font-family: wildlove;
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: 3rem;
+    height: 100%;
+    /* width: 10rem; */
+    font-size: 3rem;
+}
+
+.buttons button a {
+    color: black;
+}
+
+/* ----------------no html --------------- */
+
+.nomain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 70%;
+}
+
+.nomain h1 {
+    font-family: Myheart, Myheart2, Myheart3;
+    font-size: 9rem;
+    color: #BE0822;
+    /* margin-bottom: 20px; */
+}
+
+.nomain h3 {
+    font-family: wildlove;
+    font-size: 3rem;
+    color: #BE0822;
+    margin-bottom: 20px;
+    font-weight: 100;
+}
+
+.nomain img {
+    width: 10rem;
+}
